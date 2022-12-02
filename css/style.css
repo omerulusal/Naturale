@@ -1,0 +1,1113 @@
+/* GENERAL SETTINGS */
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #dedede;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+h1 {
+    font-size: 52px;
+    letter-spacing: 4px;
+    word-spacing: 5px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+
+.sectionHeader {
+    background-color: #eeecec;
+    display: inline-block;
+    padding: 5px 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /*manşet başlığı altındaki yazılarla arayı açtım*/
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.sectionAreaP {
+    padding: 60px 0;
+}
+
+.sectionAreaG {
+    padding: 60px 0;
+}
+
+.sectionAreaB {
+    padding: 60px 0;
+}
+
+/* Ortadaki başlık ve yazı stili */
+.galleryTop {
+    text-align: center;
+    margin-bottom: 50px;
+    /* Bu Özellikleri PARALLAX VE BEST PICTURES içinde kullanacağım */
+}
+
+
+.bestBody .container {
+    justify-content: space-between;
+}
+
+
+
+
+
+/* GRID SETTINGS */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.galleryBody .container {
+    justify-content: space-between;
+    /* 3 içeriğin genişliğini bulunduğu alana göre eşitledim */
+}
+
+.col-3 {
+    /* 3 resminde uzunluğu birbirine eşit olsun demektir.  */
+    flex-grow: 1;
+    flex: 4;
+    /* 3 sütunun genişliğinin toplamı %100 etsin diye verdim */
+    margin-left: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    /*Kutuya gölgelendirme verildi.*/
+}
+
+
+
+
+
+
+
+/* HOME SETTINGS */
+.logo img {
+    width: 36vh;
+    display: block;
+}
+
+.logo {
+    margin-right: auto;
+    /* logoya sağdan otomatik margin vererek menuyü uzaklaştırdım */
+
+
+}
+
+.menu {
+    padding-top: 10px;
+}
+
+.menu li {
+    float: left;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: black;
+    margin-right: 20px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+
+}
+
+.menu li:hover a {
+    background-color: #fad6b821;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    color: bisque;
+}
+
+/* Girişteki ana resim */
+.slider {
+    background-image: url(../img/pic1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 620px;
+    margin-top: -100px;
+    width: 100%;
+
+}
+
+#mainCaption {
+    /* Girişteki manşet yazısı */
+    background: rgba(0, 0, 0, 0.2);
+    padding-bottom: 250px;
+    z-index: -1;
+    color: beige;
+
+}
+
+.slider .caption {
+    padding-top: 15vh;
+    line-height: 60px;
+
+}
+
+.caption {
+    /* esnek görüntüle dedim */
+    display: flex;
+    /* esnekliği sütuna göre olsun */
+    flex-direction: column;
+    /* nesneyi ortala */
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    animation: anim .4s backwards linear .6s;
+}
+
+.title-content {
+    animation: anim2 .6s backwards linear .8s;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+
+.slider h1 {
+    padding-top: 200px;
+}
+
+
+.item {
+    /* Yan Yana olan 3 resmin class'ı */
+    position: relative;
+    /*kendi kendine bir alanı olmasını istedim*/
+    overflow: hidden;
+    /*Taşmaları gizledim çünkü resme yakınlaşınca çalışmasını istiyorum*/
+    display: inline-block;
+    width: 100%;
+    /*Bulunduğu alanın tamamını kaplasın*/
+    vertical-align: top;
+    /*3 Sütun olduğundan dikey olarak ortaladım*/
+}
+
+.yakin {
+    overflow: hidden;
+    /* resme yakınlaşınca resim kutudan taşıcaktı bu yüzden taşan alanları gizledim */
+}
+
+.yakin img {
+    display: block;
+    /*item'deki inline-block alanının tamamını kaplaması için verdim*/
+    width: 100%;
+    height: auto;
+    transition: all .5s ease-in-out;
+    /* geçişi hover üzerinde uygulasaydım resimden imleci kaldırır kaldırmaz boyut eski haline gelecekti bu görüntü pek hoş olmazdı */
+}
+
+.item:hover .yakin img {
+    transform: scale(1.2);
+}
+
+.item .itemText {
+    text-align: justify;
+    font-weight: 100;
+    padding: 10px;
+    line-height: 25px;
+
+}
+
+.item .itemText h3 {
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.more {
+    text-align: center;
+}
+
+.more a {
+    border: 1px solid rgba(0, 0, 0, .5);
+    text-decoration: none;
+    border: 0;
+    padding: 8px 10px;
+    transition: .5s ease-in-out;
+}
+
+.more:hover a {
+    color: white;
+    background-color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.item .itemText:hover {
+    background-color: #fad6b848;
+}
+
+/* PARALLAX */
+#parallax {
+    background: linear-gradient(rgba(0, 0, 0, .5),
+            rgba(0, 0, 0, .5)),
+        /* Resme karanlık bir hava kattım */
+        url(../img/pic7.jpg);
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxTop {
+    text-align: center;
+}
+
+.parallaxTop p {
+    color: beige;
+}
+
+/* BEST PICTURES SETTINGS */
+.col-2 {
+    flex-grow: 1;
+    width: 50%;
+    padding: 20px;
+}
+
+.bestTop {
+    text-align: center;
+}
+
+.bestContainer {
+    position: relative;
+    /*Pozisyonu kendine göre olacak*/
+}
+
+.imageOver {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    /* Kendisini kapsayan .bestContainer a göre pozisyonu kesin olsun dedim */
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 0;
+    transition: .5s ease;
+}
+
+.bestContainer:hover .overlay {
+    width: 100%;
+}
+
+.bestText {
+    white-space: nowrap;
+    /*Bu komut olmasa kaydırma olunca yazı alt alta kayacaktı.*/
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+
+
+.overlay2 {
+    position: absolute;
+    /* Kendisini kapsayan .bestContainer a göre pozisyonu kesin olsun dedim */
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    /* overlay2 ye left değeri vermedim çünkü sağdan başlasın istiyorum */
+    right: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 0;
+    transition: .5s ease;
+}
+
+.bestContainer:hover .overlay2 {
+    width: 100%;
+}
+
+
+/* FOOTER SETTINGS */
+footer {
+    background-color: darkseagreen;
+    text-align: center;
+}
+
+
+.footerItem {
+    margin-top: 20px;
+}
+
+.footerItem .logo {
+    display: inline-block;
+    padding-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footerItem p {
+    font-size: 14px;
+}
+
+.footerItem h3 {
+    font-weight: bold;
+}
+
+
+.footerLinks li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+}
+
+.footerLinks li a:hover {
+    background-color: rgb(154, 220, 154);
+}
+
+footer .col-3 {
+    box-shadow: none;
+}
+
+.socialLinks li {
+    display: inline-block;
+}
+
+.socialLinks li a {
+    color: white;
+    font-size: x-large;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.socialLinks li a:hover {
+    color: black;
+    transition: all .5s ease-in-out;
+
+}
+
+
+
+
+/* ----------***GALLERY PAGE***---------- */
+
+
+
+/* Girişteki ana resim */
+.gallerySlider {
+    background-image: url(../img/pic8.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    margin-top: -100px;
+
+}
+
+#galleryCaption {
+    /* Girişteki GALLERY manşet yazısı */
+    background: rgba(0, 0, 0, 0.2);
+    padding-bottom: 250px;
+    /* esnek görüntüle dedim */
+    display: flex;
+    /* nesneyi ortala */
+    padding-top: 15vh;
+    line-height: 60px;
+
+}
+
+#galleryCaption h1 {
+    margin-top: 32vh;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: black;
+}
+
+#galleryCaption p {
+    font-size: 14px;
+    color: black;
+}
+
+
+.caption p{
+    animation: captionP .5s backwards linear .7s;
+    opacity: 1;
+}
+@keyframes captionP {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    
+}
+
+
+/* INSPECT SECTION */
+.inspectTop {
+    text-align: center;
+}
+
+.inspectBody .col-2 {
+    display: flex;
+    /* eğer bunu vermeseydim yazılar ve resimler yan yana değil alt alta kalacaktı */
+}
+
+.inspectImage {
+    width: 40%;
+    /* Görselin bulunduğu alanı %40 olarak belirledim kalan %60 ı yazılara vereceğim */
+    overflow: hidden;
+}
+
+.inspectImage:hover img {
+    transform: scale(1.1);
+}
+
+.inspectImage img {
+    width: 100%;
+    height: auto;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.inspectText {
+    width: 60%;
+    padding-left: 10px;
+}
+
+.inspectText p {
+    line-height: 25px;
+    word-spacing: 3px;
+}
+
+.date {
+    font-style: italic;
+    color: rgba(151, 151, 151, 0.5);
+    font-size: 0.8em;
+}
+
+.inspectText h4 {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.inspectText a {
+    color: black;
+    text-decoration: none;
+    float: right;
+    padding: 5px 8px;
+    transition: .3s ease-in-out;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.inspectText a:hover {
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px black;
+}
+
+.parallax-2-Top {
+    text-align: center;
+}
+
+#parallax-2 .containerFluid {
+    background-image: url(../img/pic9.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.prlxCaption {
+    display: flex;
+    /* flex yapısı 2 ayrı kolonu yan yana koydu */
+    background-color: rgb(0, 0, 0, .4);
+    width: 100%;
+    height: 500px;
+    /* parallax-2nin yüksekliğine eşit yaptım çünkü resme karanlık bir tema uyguluyorum */
+}
+
+.prlxInfo {
+    position: relative;
+    /* pozisyon özellikleri kendine göre olsun */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*X ve Y ekseninde -50% verince tamamen ortaladım.*/
+    margin-left: 5%;
+    padding-right: 5%;
+}
+
+.prlxInfo h3 {
+    color: rgb(154, 220, 154);
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.parallax-2-text {
+    color: white;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.prlxInfo button {
+    background-color: rgb(154, 220, 154);
+    border: 0;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+    opacity: 0.5;
+}
+
+.prlxInfo button:hover {
+    opacity: .9;
+}
+
+.prlxInfo-2 {
+    display: inline-block;
+    background-color: rgba(154, 220, 154, 0.5);
+    padding: 10px 20px;
+    transition: .3s ease-in-out;
+}
+
+.prlxInfo-2:hover {
+    background-color: rgba(154, 220, 154, 0.8);
+    text-shadow: 0 1px 4px white;
+}
+
+.containerFluid .col-2 {
+    padding: 0;
+}
+
+
+/* ----------***ABOUT PAGE***---------- */
+
+
+
+.aboutSlider {
+    background: url(../img/aboutVideo.mp4);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 620px;
+    margin-top: -100px;
+    width: 100%;
+}
+
+
+#aboutCaption {
+    /* Girişteki GALLERY manşet yazısı */
+    padding-bottom: 250px;
+    /* esnek görüntüle dedim */
+    display: flex;
+    /* nesneyi ortala */
+    padding-top: 15vh;
+    line-height: 60px;
+
+}
+
+#aboutCaption h1 {
+    margin-top: 32vh;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: black;
+}
+
+#aboutCaption p {
+    font-size: 14px;
+    color: black;
+}
+
+
+#videoBg {
+    position: fixed;
+    z-index: -4;
+    min-height: 620px;
+    margin-top: -100px;
+    width: 100%;
+}
+
+/* Arka Plana video ekledim onun üstteki css kodları */
+
+
+
+/* About sayfasına video eklediğimden navbarda değişiklik 
+yapmam gerekti bu yüzden menü kodlarını yukarıdan aynen aldım
+ sadece arkaplan ve yazı rengini değiştirdim */
+.menuAbout {
+    padding-top: 10px;
+}
+
+.menuAbout li {
+    float: left;
+
+}
+
+.menuAbout li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: black;
+    margin-right: 20px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+
+}
+
+.menuAbout li:hover a {
+    background-color: #fad6b88a;
+    /*DEĞİŞTİRDİĞİM KISIM*/
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    color: darkred;
+    /*DEĞİŞTİRDİĞİM KISIM*/
+}
+
+
+/* **OUR HISTORY SECTION** */
+#ourHistory {
+    background-color: #fad6b848;
+}
+
+.ourHistoryTop {
+    text-align: center;
+}
+
+.ourHistoryBody {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.ourContainerFluid {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.year {
+    background-color: rgb(104, 161, 104);
+    padding: 5em;
+    width: 24%;
+    float: left;
+    padding-left: 10%;
+}
+
+.year p {
+    text-shadow: 0 2px 3px;
+}
+
+.ourImage {
+    width: 40%;
+    float: left;
+}
+
+.col2 img {
+    width: 100%;
+}
+
+.ourText {
+    float: right;
+    width: 30%;
+    font-size: 14px;
+    display: block;
+    margin-right: 20px;
+    text-align: left;
+    padding-top: 40px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+
+
+
+/* CONTACT SETTINGS */
+
+
+
+.contactSlider {
+    background-image: url(../img/pic12\ 1920x1280.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 620px;
+    margin-top: -100px;
+    width: 100%;
+}
+
+
+#contactCaption {
+    /* Girişteki GALLERY manşet yazısı */
+    padding-bottom: 250px;
+    /* esnek görüntüle dedim */
+    display: flex;
+    /* nesneyi ortala */
+    padding-top: 15vh;
+    line-height: 60px;
+
+}
+
+#contactCaption h1 {
+    margin-top: 32vh;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: black;
+}
+
+#contactCaption p {
+    font-size: 14px;
+    color: black;
+}
+
+#contactFID {
+    text-align: center;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    /* form elementlerinin bulunduğu wrapper classını sayfada ortaladım  */
+}
+
+.contactForm {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.formItem {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.formShape {
+    float: left;
+}
+
+textarea {
+    resize: none;
+    /* boyut düzenlemesini kaldırdım */
+}
+
+.formField {
+    background: transparent;
+    border: none;
+    /*Önce Default olan border ı kaldırdım*/
+    border-bottom: 1px solid black;
+    /*Sonra kendi istediğimi verdim*/
+    transition: all .3s ease-in-out;
+    padding: 15px;
+    width: 100%;
+}
+
+.formField:hover::placeholder {
+    color: black;
+    /* Form Üzerine Gelince içerideki yazının rengi tamamen siyah olur */
+}
+
+.formField:focus::placeholder {
+    color: rgba(255, 0, 0, 0.3);
+    /* Forma Odaklanınca içerideki yazının rengi kırmızı olur */
+}
+
+.formField:focus {
+    background: transparent;
+    border: none;
+    /*Önce Default olan border ı kaldırdım*/
+    outline: none;
+    border-bottom: 1px solid red;
+}
+
+
+.formBtn {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    background-color: rgb(104, 161, 104);
+    color: black;
+
+}
+
+.formBtn:hover {
+    box-shadow: 0 2px 4px lightgreen;
+    background-color: black;
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:960px) {
+    .caption h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    /* HOME SETTINGS */
+    .logo img {
+        width: 100px;
+        display: block;
+        padding-top: 15px;
+        margin-right: 20px;
+    }
+
+
+    .menu {
+        padding-top: 10px;
+    }
+
+    .menu li {
+        float: left;
+
+    }
+
+    .menu li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        padding: 8px 10px;
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
+
+
+    .col-2 {
+        flex-grow: 1;
+        width: 50%;
+        padding: 5px;
+    }
+
+
+
+    .imageOver {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .bestText {
+        top: 45%;
+        left: 40%;
+        font-size: 14px;
+    }
+
+    .footerItem h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+
+    .footerItem {
+        font-size: 12px;
+    }
+
+    .footerItem p {
+        line-height: 20px;
+    }
+
+    .footerLinks li a {
+        padding: 6px 10px;
+    }
+
+    .socialLinks li a {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+    .inspectBody .container {
+        flex-direction: column;
+    }
+
+    .inspectBody .container .col-2 {
+        width: 100%;
+    }
+
+    .parallax-2-Top h3 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .prlxInfo h3 {
+        font-size: 20px;
+    }
+
+    .parallax-2-text {
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    #videoBg {
+        visibility: hidden;
+    }
+
+    #aboutSlider {
+        background-image: url(../img/pic13\ 1920x1280.jpg);
+        background-color: black;
+    }
+
+    .menuAbout {
+        padding-top: 10px;
+    }
+
+    .menuAbout li a {
+        padding: 8px 14px;
+        letter-spacing: 0px;
+        font-size: 12px;
+        letter-spacing: 1px;
+
+    }
+
+    .menuAbout li:hover a {
+        background-color: #fad6b848;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        color: black;
+    }
+
+    .ourHistoryTop h2 {
+        font-size: 14px;
+        padding: 0 15px;
+        margin-bottom: 10px;
+    }
+
+    .ourContainerFluid .col2 .year {
+        width: 80px;
+        padding: 42px 30px;
+    }
+
+    .ourText {
+        font-size: 12px;
+        padding: 4px 2px;
+        line-height: 18px;
+    }
+
+
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:720px) {
+    .caption h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .logo a {
+        width: 10%;
+    }
+
+    .logo a img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .menu li a {
+        padding: 4px 8px;
+        letter-spacing: 0px;
+        font-size: 10px;
+    }
+
+    .galleryBody .container {
+        flex-direction: column;
+    }
+
+    .galleryBody .container .col-3 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .menuAbout {
+        padding-top: 10px;
+    }
+
+    .menuAbout li a {
+        padding: 8px 10px;
+        font-size: 12px;
+        letter-spacing: 0px;
+
+    }
+
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .ourContainerFluid {
+        flex-direction: column;
+    }
+
+
+    .year {
+        visibility: hidden;
+    }
+
+    .ourContainerFluid .col2 .year {
+        width: 0px;
+        padding: 0px 0px;
+    }
+
+    .ourText {
+        font-size: 12px;
+        padding: 40px 20px;
+        line-height: 28px;
+        float: left;
+        width: 50%;
+    }
+
+
+
+    .menuAbout li a {
+        padding: 8px 3px;
+        letter-spacing: 0px;
+        font-size: 12px;
+        letter-spacing: 0px;
+
+    }
+
+    .caption p{
+        text-align: center;
+        line-height: 30px;
+    }
+
+}
+
+@media screen and (max-width:540px){
+    .socialLinks li a {
+        font-size: 12px;
+    }
+}

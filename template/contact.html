@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- yukarıdaki kod tarayıcının sayfayı responsive olarak algılamasını sağlar. -->
+    <title>Nature</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!-- CSS,CDN AND RESET CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- *** --------HEADER--------- *** -->
+
+    <header>
+        <div class="container">
+            <div class="logo d-block">
+                <a href="#"><img src="../img/logo1.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../template/natures.html">GALLERY</a></li>
+                    <li><a href="../template/about.html">About</a></li>
+                    <li><a href="../template/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- *** ----------MAIN SECTION---------- *** -->
+    <section id="contactslider" class="contactSlider">
+        <div id="contactCaption" class="caption">
+            <h1 class="title h1">CONTACT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, similique!</p>
+        </div>
+    </section>
+
+
+
+    <!-- FORM SECTION -->
+    <section id="contactFID" class="sectionArea">
+        <div class="contactTop">
+            <h2 class="sectionHeader">
+                CONTACT US
+            </h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="contactBody">
+            <div class="container">
+                <!-- wrapper class'ı kullanmamın nedeni daha önce birçok kez container kullandığımdan sadece conteiner 
+                class'ı koysaydım conteinerın olduğu tüm elementlerde değişiklik olacaktı -->
+                <div class="wrapper">
+                    <form action="#" class="contactForm">
+
+                        <div class="formItem">
+                            <span class="formShape">
+                                <i class="fa-solid fa-person fa-2x"></i>
+                            </span>
+                            <input class="formField" type="text" placeholder="Full Name" required>
+                            <!-- required alanın doldurulması zorunlu demektir.-->
+                        </div>
+
+
+                        <div class="formItem">
+                            <span class="formShape">
+                                <i class="fa-solid fa-envelope fa-2x"></i>
+                            </span>
+                            <input class="formField" type="email" placeholder="E-Mail" required>
+                            <!-- required alanın doldurulması zorunlu demektir.-->
+                        </div>
+
+
+
+                        <div class="formItem">
+                            <span class="formShape">
+                                <i class="fa-solid fa-phone fa-2x"></i>
+                            </span>
+                            <input class="formField" type="number" placeholder="Phone" required>
+                            <!-- required alanın doldurulması zorunlu demektir.-->
+                        </div>
+
+
+                        <div class="formItem">
+                            <span class="formShape">
+                                <i class="fa-solid fa-info fa-2x"></i>
+                            </span>
+                            <input class="formField" type="text" placeholder="Subject" required>
+                            <!-- required alanın doldurulması zorunlu demektir.-->
+                        </div>
+
+
+                        <div class="formItem">
+                            <span class="formShape">
+                                <i class="fa-duotone fa-messages fa-3x"></i>
+                            </span>
+                            <textarea name="message" id="textArea" class="formField" cols="30" rows="7" required
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="formItem">
+                            <input class="formBtn" type="submit" value="SEND">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- *** ---------FOOTER SECTION--------- *** -->
+
+
+    <footer class="sectionArea">
+        <div class="container">
+
+            <!-- containerı 3'e böldüm -->
+            <div class="col-3">
+                <div class="footerItem">
+                    <h3>WELCOME TO OUR SITE</h3>
+                    <div class="logo">
+                        <a href="#"><img src="../img/logo1.png" alt="logo"></a>
+                    </div>
+                    <p>Neque fugiat aperiam illum quia quos velit.</p>
+                </div>
+            </div>
+
+
+
+            <div class="col-3">
+                <div class="footerItem">
+                    <h3>QUICK LINK</h3>
+                    <ul class="footerLinks">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../template/natures.html">GALLERY</a></li>
+                        <li><a href="../template/about.html">About</a></li>
+                        <li><a href="../template/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- sosyal medya linklerini ekledim -->
+            <div class="col-3">
+                <div class="footerItem">
+                    <h3>BE SOCIAL WITH US</h3>
+                    <ul class="socialLinks">
+                        <li>
+                            <a href="https://tr-tr.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="http://twitter.com" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://linkedin.com" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>
