@@ -30,22 +30,33 @@
 <body>
     <!-- *** --------HEADER--------- *** -->
 
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <div class="logo d-block">
                 <a href="#"><img src="../img/logo1.png" alt="logo"></a>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../template/natures.html">GALLERY</a></li>
-                    <li><a href="../template/about.html">About</a></li>
-                    <li><a href="../template/contact.html">Contact</a></li>
+            <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
+                <ul class="w-100 d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../template/natures.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../template/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../template/contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
+            <button class="navbar-toggler navbar-dark " type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon text-end "></span>
+            </button>
         </div>
-    </header>
-
+    </nav>
 
 
     <!-- *** ----------MAIN SECTION---------- *** -->
@@ -81,34 +92,26 @@
                             <!-- required alanın doldurulması zorunlu demektir.-->
                         </div>
 
-
                         <div class="formItem">
                             <span class="formShape">
                                 <i class="fa-solid fa-envelope fa-2x"></i>
                             </span>
                             <input class="formField" type="email" placeholder="E-Mail" required>
-                            <!-- required alanın doldurulması zorunlu demektir.-->
                         </div>
-
-
 
                         <div class="formItem">
                             <span class="formShape">
                                 <i class="fa-solid fa-phone fa-2x"></i>
                             </span>
                             <input class="formField" type="number" placeholder="Phone" required>
-                            <!-- required alanın doldurulması zorunlu demektir.-->
                         </div>
-
 
                         <div class="formItem">
                             <span class="formShape">
                                 <i class="fa-solid fa-info fa-2x"></i>
                             </span>
                             <input class="formField" type="text" placeholder="Subject" required>
-                            <!-- required alanın doldurulması zorunlu demektir.-->
                         </div>
-
 
                         <div class="formItem">
                             <span class="formShape">

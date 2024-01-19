@@ -85,10 +85,6 @@ h3 {
 
 
 
-
-
-
-
 /* HOME SETTINGS */
 .logo img {
     width: 36vh;
@@ -1109,5 +1105,13 @@ textarea {
 @media screen and (max-width:540px){
     .socialLinks li a {
         font-size: 12px;
+    }
+}
+@media screen and (max-width:480px){
+    .socialLinks li a {
+        font-size: 12px;
+    }
+    .logo{
+        display: none !important;
     }
 }

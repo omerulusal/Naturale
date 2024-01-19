@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- yukarıdaki kod tarayıcının sayfayı responsive olarak algılamasını sağlar. -->
-    <title>Nature</title>
+    <title>Naturale</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -28,22 +28,34 @@
 
 <body>
     <!-- *** --------HEADER--------- *** -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="logo d-block">
+                    <a href="#"><img src="img/logo1.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
+                    <ul class="w-100 d-flex justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="template/natures.html">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="template/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="template/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
 
-    <header>
-        <div class="container">
-            <div class="logo d-block">
-                <a href="#"><img src="img/logo1.png" alt="logo"></a>
+                <button class="navbar-toggler navbar-dark " type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon text-end "></span>
+                </button>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="template/natures.html">GALLERY</a></li>
-                    <li><a href="template/about.html">About</a></li>
-                    <li><a href="template/contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        </nav>
 
 
     <!-- *** ----------MAIN SECTION---------- *** -->
@@ -97,17 +109,14 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, omnis accusamus! Non,
                                 fugiat
                                 minima! Facilis odit debitis repellendus commodi velit!</p>
-                                <div class="more">
-                                    <a href="#" class="btn btn-details">More Details</a>
-                                </div>
+                            <div class="more">
+                                <a href="#" class="btn btn-details">More Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-
-
                 <!---------- ITEM-3 ---------->
-
 
                 <div class="col-3">
                     <div class="item">
@@ -120,17 +129,15 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, omnis accusamus! Non,
                                 fugiat
                                 minima! Facilis odit debitis repellendus commodi velit!</p>
-                                <div class="more">
-                                    <a href="#" class="btn btn-details">More Details</a>
-                                </div>
+                            <div class="more">
+                                <a href="#" class="btn btn-details">More Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <!-- *** ---------PARALLAX SECTION---------*** -->
     <section id="parallax" class="sectionAreaP">
@@ -149,7 +156,6 @@
 
         <div class="bestBody">
             <div class="container">
-
 
                 <div class="col-2">
                     <div class="bestContainer">
@@ -177,18 +183,14 @@
                 </div>
 
 
-
             </div>
         </div>
     </section>
 
 
     <!-- *** ---------FOOTER SECTION--------- *** -->
-
-
     <footer class="sectionArea">
         <div class="container">
-
             <!-- containerı 3'e böldüm -->
             <div class="col-3">
                 <div class="footerItem">
@@ -199,9 +201,6 @@
                     <p>Neque fugiat aperiam illum quia quos velit.</p>
                 </div>
             </div>
-
-
-
             <div class="col-3">
                 <div class="footerItem">
                     <h3>QUICK LINK</h3>
@@ -213,9 +212,6 @@
                     </ul>
                 </div>
             </div>
-
-
-
             <!-- sosyal medya linklerini ekledim -->
             <div class="col-3">
                 <div class="footerItem">
@@ -226,7 +222,6 @@
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
-
                         <li>
                             <a href="http://twitter.com" target="_blank">
                                 <i class="fa-brands fa-twitter"></i>
@@ -240,8 +235,6 @@
                     </ul>
                 </div>
             </div>
-
-
         </div>
     </footer>
 </body>
