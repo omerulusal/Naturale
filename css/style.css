@@ -691,7 +691,7 @@ yapmam gerekti bu yüzden menü kodlarını yukarıdan aynen aldım
 
 /* **OUR HISTORY SECTION** */
 #ourHistory {
-    background-color: #fad6b848;
+    padding: 20px;
 }
 
 .ourHistoryTop {
@@ -701,6 +701,7 @@ yapmam gerekti bu yüzden menü kodlarını yukarıdan aynen aldım
 .ourHistoryBody {
     padding-top: 40px;
     padding-bottom: 40px;
+    color: white;
 }
 
 .ourContainerFluid {
@@ -711,7 +712,8 @@ yapmam gerekti bu yüzden menü kodlarını yukarıdan aynen aldım
 }
 
 .year {
-    background-color: rgb(104, 161, 104);
+    /* background-color: rgba(104, 161, 104, 0.286); */
+    color: white;
     padding: 5em;
     width: 24%;
     float: left;
